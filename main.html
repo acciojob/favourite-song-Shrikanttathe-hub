@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Song</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div id="favoriteSong">
+        <!-- The song_name will be replaced with your actual favorite song name using JavaScript -->
+        My current favorite song is <a id="songLink" href="" target="_blank">[song_name]</a>.
+    </div>
 
+    <script>
+        // JavaScript to replace [song_name] with your actual favorite song name
+        document.addEventListener('DOMContentLoaded', function () {
+            const favoriteSongDiv = document.getElementById('favoriteSong');
+            const songLink = document.getElementById('songLink');
+
+            // Replace [song_name] with your actual favorite song name
+            const favoriteSongName = "Your Favorite Song"; // Replace with your actual favorite song name
+            songLink.textContent = favoriteSongName;
+
+            // Replace the href attribute with the official YouTube link of the song
+            const youtubeVideoUrl = "https://www.youtube.com/watch?v=YOUR_VIDEO_ID"; // Replace with the YouTube video URL
+            songLink.href = youtubeVideoUrl;
+        });
+    </script>
 </body>
-
 </html>
